@@ -1,0 +1,1120 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://example.org/mckee#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://example.org/mckee#">
+    <Prefix name="" IRI="https://example.org/mckee#"/>
+    <Prefix name="mck" IRI="https://example.org/mckee#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="dcterms" IRI="http://purl.org/dc/terms/"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
+        <Literal>Nicolas Chiappucci</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="en">Ontology modelling Robert McKee&apos;s three levels of dramatic conflict, populated with instances from &apos;A Clockwork Orange&apos;.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal>1.0.0</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="Body"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Conflict"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Emotions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ExternalForce"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ExtraPersonalConflict"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="InnerConflict"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Mind"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Origin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="PersonalConflict"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="PhysicalEnvironment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="SocialEnvironment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="SocialInstitutions"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="affects"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasOriginIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasOriginInBody"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasOriginInEmotions"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasOriginInMind"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isAffectedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isAgainst"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Alex"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="AlexsBody"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="AlexsEmotions"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="AlexsMind"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="AlexsParents"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Billyboy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="CatLady"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Dim"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Georgie"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="JoeTheLodger"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Lardface"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="MinisterOfInterior"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="MrAlexander"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="MrDeltoid"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="MrsAlexander"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Pete"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="PoliticalConspirators"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="PrisonChaplain"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="ThePolice"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="ThePrisonSystem"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="TheState"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Tramp"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:created"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:license"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:date"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="AlexVsDim_Korova"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="AlexVsDroogs_LeadershipChallenge"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="AlexVsGeorgieAndDim_Marina"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="AlexVsDimAndGeorgie_PoliceBeating"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="AlexVsPolice_Arrest"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="AlexVsTheAlexanders_HomeInvasion"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="AlexVsBillyboyGang_Casino"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="AlexVsCatLady_HomeInvasion"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="AlexVsTramp_Revenge"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="AlexVsMinister_Deal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="AlexsAversionToViolence"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="AlexVsMrAlexander_Revenge"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="AlexsSuicidalImpulse"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="AlexsAversionToBeethoven"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="AlexVsParentsAndLodger_Rejection"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="AlexsRecovery"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="ChaplainVsState_MoralDebate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="AlexVsDroogs_Betrayal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="AlexVsDeltoid_PostArrest"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="AlexVsState_LudovicoTechnique"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="AlexVsTramp_Underpass"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="AlexVsPrisonSystem_Incarceration"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="ExternalForce"/>
+        <ObjectUnionOf>
+            <Class IRI="PhysicalEnvironment"/>
+            <Class IRI="SocialEnvironment"/>
+            <Class IRI="SocialInstitutions"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="Origin"/>
+        <ObjectUnionOf>
+            <Class IRI="Body"/>
+            <Class IRI="Emotions"/>
+            <Class IRI="Mind"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="ExtraPersonalConflict"/>
+        <Class IRI="Conflict"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="InnerConflict"/>
+        <Class IRI="Conflict"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="InnerConflict"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="hasOriginIn"/>
+            <ObjectUnionOf>
+                <Class IRI="Body"/>
+                <Class IRI="Emotions"/>
+                <Class IRI="Mind"/>
+            </ObjectUnionOf>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="PersonalConflict"/>
+        <Class IRI="Conflict"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="ExtraPersonalConflict"/>
+        <Class IRI="InnerConflict"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="ExtraPersonalConflict"/>
+        <Class IRI="PersonalConflict"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="InnerConflict"/>
+        <Class IRI="PersonalConflict"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="PersonalConflict"/>
+        <NamedIndividual IRI="AlexVsBillyboyGang_Casino"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PersonalConflict"/>
+        <NamedIndividual IRI="AlexVsCatLady_HomeInvasion"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PersonalConflict"/>
+        <NamedIndividual IRI="AlexVsDeltoid_PostArrest"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PersonalConflict"/>
+        <NamedIndividual IRI="AlexVsDimAndGeorgie_PoliceBeating"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PersonalConflict"/>
+        <NamedIndividual IRI="AlexVsDim_Korova"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PersonalConflict"/>
+        <NamedIndividual IRI="AlexVsDroogs_Betrayal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PersonalConflict"/>
+        <NamedIndividual IRI="AlexVsDroogs_LeadershipChallenge"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PersonalConflict"/>
+        <NamedIndividual IRI="AlexVsGeorgieAndDim_Marina"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PersonalConflict"/>
+        <NamedIndividual IRI="AlexVsMinister_Deal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PersonalConflict"/>
+        <NamedIndividual IRI="AlexVsMrAlexander_Revenge"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PersonalConflict"/>
+        <NamedIndividual IRI="AlexVsParentsAndLodger_Rejection"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="ExtraPersonalConflict"/>
+        <NamedIndividual IRI="AlexVsPolice_Arrest"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="ExtraPersonalConflict"/>
+        <NamedIndividual IRI="AlexVsPrisonSystem_Incarceration"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="ExtraPersonalConflict"/>
+        <NamedIndividual IRI="AlexVsState_LudovicoTechnique"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PersonalConflict"/>
+        <NamedIndividual IRI="AlexVsTheAlexanders_HomeInvasion"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PersonalConflict"/>
+        <NamedIndividual IRI="AlexVsTramp_Revenge"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="PersonalConflict"/>
+        <NamedIndividual IRI="AlexVsTramp_Underpass"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="InnerConflict"/>
+        <NamedIndividual IRI="AlexsAversionToBeethoven"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="InnerConflict"/>
+        <NamedIndividual IRI="AlexsAversionToViolence"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Body"/>
+        <NamedIndividual IRI="AlexsBody"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Emotions"/>
+        <NamedIndividual IRI="AlexsEmotions"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Mind"/>
+        <NamedIndividual IRI="AlexsMind"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="InnerConflict"/>
+        <NamedIndividual IRI="AlexsRecovery"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="InnerConflict"/>
+        <NamedIndividual IRI="AlexsSuicidalImpulse"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="ExtraPersonalConflict"/>
+        <NamedIndividual IRI="ChaplainVsState_MoralDebate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="SocialEnvironment"/>
+        <NamedIndividual IRI="PoliticalConspirators"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="SocialInstitutions"/>
+        <NamedIndividual IRI="ThePolice"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="SocialInstitutions"/>
+        <NamedIndividual IRI="ThePrisonSystem"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="SocialInstitutions"/>
+        <NamedIndividual IRI="TheState"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="affects"/>
+        <NamedIndividual IRI="AlexVsBillyboyGang_Casino"/>
+        <NamedIndividual IRI="Alex"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="affects"/>
+        <NamedIndividual IRI="AlexVsBillyboyGang_Casino"/>
+        <NamedIndividual IRI="Billyboy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="affects"/>
+        <NamedIndividual IRI="AlexVsCatLady_HomeInvasion"/>
+        <NamedIndividual IRI="Alex"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="affects"/>
+        <NamedIndividual IRI="AlexVsCatLady_HomeInvasion"/>
+        <NamedIndividual IRI="CatLady"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="affects"/>
+        <NamedIndividual IRI="AlexVsDeltoid_PostArrest"/>
+        <NamedIndividual IRI="Alex"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="affects"/>
+        <NamedIndividual IRI="AlexVsDeltoid_PostArrest"/>
+        <NamedIndividual IRI="MrDeltoid"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="affects"/>
+        <NamedIndividual IRI="AlexVsDimAndGeorgie_PoliceBeating"/>
+        <NamedIndividual IRI="Alex"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="affects"/>
+        <NamedIndividual IRI="AlexVsDimAndGeorgie_PoliceBeating"/>
+        <NamedIndividual IRI="Dim"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="affects"/>
+        <NamedIndividual IRI="AlexVsDimAndGeorgie_PoliceBeating"/>
+        <NamedIndividual IRI="Georgie"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="affects"/>
+        <NamedIndividual IRI="AlexVsDim_Korova"/>
+        <NamedIndividual IRI="Alex"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="affects"/>
+        <NamedIndividual IRI="AlexVsDim_Korova"/>
+        <NamedIndividual IRI="Dim"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="affects"/>
+        <NamedIndividual IRI="AlexVsDroogs_Betrayal"/>
+        <NamedIndividual IRI="Alex"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="affects"/>
+        <NamedIndividual IRI="AlexVsDroogs_Betrayal"/>
+        <NamedIndividual IRI="Dim"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="affects"/>
+        <NamedIndividual IRI="AlexVsDroogs_LeadershipChallenge"/>
+        <NamedIndividual IRI="Alex"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="affects"/>
+        <NamedIndividual IRI="AlexVsDroogs_LeadershipChallenge"/>
+        <NamedIndividual IRI="Dim"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="affects"/>
+        <NamedIndividual IRI="AlexVsDroogs_LeadershipChallenge"/>
+        <NamedIndividual IRI="Georgie"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="affects"/>
+        <NamedIndividual IRI="AlexVsGeorgieAndDim_Marina"/>
+        <NamedIndividual IRI="Alex"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="affects"/>
+        <NamedIndividual IRI="AlexVsGeorgieAndDim_Marina"/>
+        <NamedIndividual IRI="Dim"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="affects"/>
+        <NamedIndividual IRI="AlexVsGeorgieAndDim_Marina"/>
+        <NamedIndividual IRI="Georgie"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="affects"/>
+        <NamedIndividual IRI="AlexVsMinister_Deal"/>
+        <NamedIndividual IRI="Alex"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="affects"/>
+        <NamedIndividual IRI="AlexVsMinister_Deal"/>
+        <NamedIndividual IRI="MinisterOfInterior"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="affects"/>
+        <NamedIndividual IRI="AlexVsMrAlexander_Revenge"/>
+        <NamedIndividual IRI="Alex"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="affects"/>
+        <NamedIndividual IRI="AlexVsMrAlexander_Revenge"/>
+        <NamedIndividual IRI="MrAlexander"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="affects"/>
+        <NamedIndividual IRI="AlexVsParentsAndLodger_Rejection"/>
+        <NamedIndividual IRI="Alex"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="affects"/>
+        <NamedIndividual IRI="AlexVsParentsAndLodger_Rejection"/>
+        <NamedIndividual IRI="AlexsParents"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="affects"/>
+        <NamedIndividual IRI="AlexVsParentsAndLodger_Rejection"/>
+        <NamedIndividual IRI="JoeTheLodger"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="affects"/>
+        <NamedIndividual IRI="AlexVsPolice_Arrest"/>
+        <NamedIndividual IRI="Alex"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isAgainst"/>
+        <NamedIndividual IRI="AlexVsPolice_Arrest"/>
+        <NamedIndividual IRI="ThePolice"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="affects"/>
+        <NamedIndividual IRI="AlexVsPrisonSystem_Incarceration"/>
+        <NamedIndividual IRI="Alex"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isAgainst"/>
+        <NamedIndividual IRI="AlexVsPrisonSystem_Incarceration"/>
+        <NamedIndividual IRI="ThePrisonSystem"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="affects"/>
+        <NamedIndividual IRI="AlexVsState_LudovicoTechnique"/>
+        <NamedIndividual IRI="Alex"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isAgainst"/>
+        <NamedIndividual IRI="AlexVsState_LudovicoTechnique"/>
+        <NamedIndividual IRI="TheState"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="affects"/>
+        <NamedIndividual IRI="AlexVsTheAlexanders_HomeInvasion"/>
+        <NamedIndividual IRI="Alex"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="affects"/>
+        <NamedIndividual IRI="AlexVsTheAlexanders_HomeInvasion"/>
+        <NamedIndividual IRI="MrAlexander"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="affects"/>
+        <NamedIndividual IRI="AlexVsTheAlexanders_HomeInvasion"/>
+        <NamedIndividual IRI="MrsAlexander"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="affects"/>
+        <NamedIndividual IRI="AlexVsTramp_Revenge"/>
+        <NamedIndividual IRI="Alex"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="affects"/>
+        <NamedIndividual IRI="AlexVsTramp_Revenge"/>
+        <NamedIndividual IRI="Tramp"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="affects"/>
+        <NamedIndividual IRI="AlexVsTramp_Underpass"/>
+        <NamedIndividual IRI="Alex"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="affects"/>
+        <NamedIndividual IRI="AlexVsTramp_Underpass"/>
+        <NamedIndividual IRI="Tramp"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="affects"/>
+        <NamedIndividual IRI="AlexsAversionToBeethoven"/>
+        <NamedIndividual IRI="Alex"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasOriginInBody"/>
+        <NamedIndividual IRI="AlexsAversionToBeethoven"/>
+        <NamedIndividual IRI="AlexsBody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasOriginInEmotions"/>
+        <NamedIndividual IRI="AlexsAversionToBeethoven"/>
+        <NamedIndividual IRI="AlexsEmotions"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="affects"/>
+        <NamedIndividual IRI="AlexsAversionToViolence"/>
+        <NamedIndividual IRI="Alex"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasOriginInBody"/>
+        <NamedIndividual IRI="AlexsAversionToViolence"/>
+        <NamedIndividual IRI="AlexsBody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasOriginInMind"/>
+        <NamedIndividual IRI="AlexsAversionToViolence"/>
+        <NamedIndividual IRI="AlexsMind"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="affects"/>
+        <NamedIndividual IRI="AlexsRecovery"/>
+        <NamedIndividual IRI="Alex"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasOriginInMind"/>
+        <NamedIndividual IRI="AlexsRecovery"/>
+        <NamedIndividual IRI="AlexsMind"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="affects"/>
+        <NamedIndividual IRI="AlexsSuicidalImpulse"/>
+        <NamedIndividual IRI="Alex"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasOriginInBody"/>
+        <NamedIndividual IRI="AlexsSuicidalImpulse"/>
+        <NamedIndividual IRI="AlexsBody"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasOriginInMind"/>
+        <NamedIndividual IRI="AlexsSuicidalImpulse"/>
+        <NamedIndividual IRI="AlexsMind"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="affects"/>
+        <NamedIndividual IRI="ChaplainVsState_MoralDebate"/>
+        <NamedIndividual IRI="PrisonChaplain"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isAgainst"/>
+        <NamedIndividual IRI="ChaplainVsState_MoralDebate"/>
+        <NamedIndividual IRI="TheState"/>
+    </ObjectPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasOriginInBody"/>
+        <ObjectProperty IRI="hasOriginIn"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasOriginInEmotions"/>
+        <ObjectProperty IRI="hasOriginIn"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasOriginInMind"/>
+        <ObjectProperty IRI="hasOriginIn"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="affects"/>
+        <ObjectProperty IRI="isAffectedBy"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="affects"/>
+        <Class IRI="Conflict"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasOriginIn"/>
+        <Class IRI="Conflict"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isAgainst"/>
+        <Class IRI="ExtraPersonalConflict"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasOriginIn"/>
+        <Class IRI="Origin"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasOriginInBody"/>
+        <Class IRI="Body"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasOriginInEmotions"/>
+        <Class IRI="Emotions"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasOriginInMind"/>
+        <Class IRI="Mind"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isAgainst"/>
+        <Class IRI="ExternalForce"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Alex</IRI>
+        <Literal>Alex DeLarge</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>AlexVsBillyboyGang_Casino</IRI>
+        <Literal>Alex&apos;s gang fights Billyboy&apos;s gang in the derelict casino</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>AlexVsCatLady_HomeInvasion</IRI>
+        <Literal>Alex breaks into the Catlady&apos;s house and murders her</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>AlexVsDeltoid_PostArrest</IRI>
+        <Literal>Mr. Deltoid confronts Alex at the police station</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>AlexVsDimAndGeorgie_PoliceBeating</IRI>
+        <Literal>Dim and Georgie, now policemen, beat Alex</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>AlexVsDim_Korova</IRI>
+        <Literal>Alex disciplines Dim in the Korova Milkbar</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>AlexVsDroogs_Betrayal</IRI>
+        <Literal>Dim betrays Alex after the Catlady&apos;s murder</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>AlexVsDroogs_LeadershipChallenge</IRI>
+        <Literal>Georgie and Dim challenge Alex&apos;s leadership</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>AlexVsGeorgieAndDim_Marina</IRI>
+        <Literal>Alex reasserts dominance over Georgie and Dim at the marina</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>AlexVsMinister_Deal</IRI>
+        <Literal>The Minister of the Interior makes a deal with Alex</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>AlexVsMrAlexander_Revenge</IRI>
+        <Literal>Mr. Alexander recognizes Alex and plots his revenge</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>AlexVsParentsAndLodger_Rejection</IRI>
+        <Literal>Alex is rejected by his parents upon returning home</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>AlexVsPolice_Arrest</IRI>
+        <Literal>Alex is arrested and beaten by the police</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>AlexVsPrisonSystem_Incarceration</IRI>
+        <Literal>Alex is sentenced and incarcerated</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>AlexVsState_LudovicoTechnique</IRI>
+        <Literal>Alex undergoes the Ludovico Technique</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>AlexVsTheAlexanders_HomeInvasion</IRI>
+        <Literal>Alex&apos;s gang invades the &apos;HOME&apos; and assaults the Alexanders</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>AlexVsTramp_Revenge</IRI>
+        <Literal>The tramp recognizes Alex and incites a mob against him</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>AlexVsTramp_Underpass</IRI>
+        <Literal>Alex and his droogs assault the tramp in the underpass</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>AlexsAversionToBeethoven</IRI>
+        <Literal>Alex&apos;s love for Beethoven&apos;s 9th versus his conditioned sickness</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>AlexsAversionToViolence</IRI>
+        <Literal>Alex&apos;s conditioned nausea versus his violent impulses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>AlexsBody</IRI>
+        <Literal>Alex&apos;s Body</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>AlexsEmotions</IRI>
+        <Literal>Alex&apos;s Emotions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>AlexsMind</IRI>
+        <Literal>Alex&apos;s Mind</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>AlexsParents</IRI>
+        <Literal>Alex&apos;s Parents</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>AlexsRecovery</IRI>
+        <Literal>Alex is &apos;cured&apos; of his aversion therapy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>AlexsSuicidalImpulse</IRI>
+        <Literal>Alex&apos;s desire to end his suffering through suicide</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Billyboy</IRI>
+        <Literal>Billyboy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Body</IRI>
+        <Literal xml:lang="en">Body</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Body</IRI>
+        <Literal xml:lang="it">Corpo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>CatLady</IRI>
+        <Literal>Catlady</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ChaplainVsState_MoralDebate</IRI>
+        <Literal>The Prison Chaplain objects to the Ludovico Technique on moral grounds</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Conflict</IRI>
+        <Literal xml:lang="en">A state of opposition between a character and internal or external forces.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Conflict</IRI>
+        <Literal xml:lang="en">Conflict</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Conflict</IRI>
+        <Literal xml:lang="it">Conflitto</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Dim</IRI>
+        <Literal>Dim</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Emotions</IRI>
+        <Literal xml:lang="en">Emotions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Emotions</IRI>
+        <Literal xml:lang="it">Emozioni</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ExternalForce</IRI>
+        <Literal xml:lang="en">External Force</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>ExtraPersonalConflict</IRI>
+        <Literal xml:lang="en">Opposition between the protagonist and elements of the external world.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ExtraPersonalConflict</IRI>
+        <Literal xml:lang="it">Conflitto extrapersonale</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ExtraPersonalConflict</IRI>
+        <Literal xml:lang="en">Extra‑personal Conflict</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Georgie</IRI>
+        <Literal>Georgie</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>InnerConflict</IRI>
+        <Literal xml:lang="en">Psychological struggle within a character.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>InnerConflict</IRI>
+        <Literal xml:lang="it">Conflitto interno</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>InnerConflict</IRI>
+        <Literal xml:lang="en">Inner Conflict</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>JoeTheLodger</IRI>
+        <Literal>Joe the Lodger</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Lardface</IRI>
+        <Literal>Lardface</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Mind</IRI>
+        <Literal xml:lang="it">Mente</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Mind</IRI>
+        <Literal xml:lang="en">Mind</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>MinisterOfInterior</IRI>
+        <Literal>Minister of the Interior (Frederick)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>MrAlexander</IRI>
+        <Literal>Mr. Alexander</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>MrDeltoid</IRI>
+        <Literal>Mr. Deltoid</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>MrsAlexander</IRI>
+        <Literal>Mrs. Alexander</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Origin</IRI>
+        <Literal xml:lang="en">Origin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>PersonalConflict</IRI>
+        <Literal xml:lang="en">Interpersonal opposition between the protagonist and another character.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>PersonalConflict</IRI>
+        <Literal xml:lang="it">Conflitto personale</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>PersonalConflict</IRI>
+        <Literal xml:lang="en">Personal Conflict</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Pete</IRI>
+        <Literal>Pete</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>PhysicalEnvironment</IRI>
+        <Literal xml:lang="it">Ambiente fisico</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>PhysicalEnvironment</IRI>
+        <Literal xml:lang="en">Physical Environment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>PoliticalConspirators</IRI>
+        <Literal>Political Conspirators</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>PrisonChaplain</IRI>
+        <Literal>Prison Chaplain</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>SocialEnvironment</IRI>
+        <Literal xml:lang="it">Ambiente sociale</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>SocialEnvironment</IRI>
+        <Literal xml:lang="en">Social Environment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>SocialInstitutions</IRI>
+        <Literal xml:lang="it">Istituzioni sociali</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>SocialInstitutions</IRI>
+        <Literal xml:lang="en">Social Institutions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ThePolice</IRI>
+        <Literal>The Police</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ThePrisonSystem</IRI>
+        <Literal>The Prison System</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>TheState</IRI>
+        <Literal>The State</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Tramp</IRI>
+        <Literal>The Tramp</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>affects</IRI>
+        <Literal xml:lang="en">Indicates the entity influenced by the conflict.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>affects</IRI>
+        <Literal xml:lang="en">affects</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasOriginIn</IRI>
+        <Literal xml:lang="en">Relates a conflict to the internal source from which it arises.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasOriginIn</IRI>
+        <Literal xml:lang="it">ha origine in</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasOriginIn</IRI>
+        <Literal xml:lang="en">has origin in</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasOriginInBody</IRI>
+        <Literal xml:lang="en">has origin in body</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasOriginInEmotions</IRI>
+        <Literal xml:lang="en">has origin in emotions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>hasOriginInMind</IRI>
+        <Literal xml:lang="en">has origin in mind</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isAffectedBy</IRI>
+        <Literal xml:lang="en">is affected by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isAgainst</IRI>
+        <Literal xml:lang="en">Connects an extrapersonal conflict to the external force it opposes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isAgainst</IRI>
+        <Literal xml:lang="en">is against</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>isAgainst</IRI>
+        <Literal xml:lang="it">si scontra con</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

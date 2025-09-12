@@ -1,0 +1,388 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://example.org/mckee-conflict"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://example.org/mckee-conflict">
+    <Prefix name="" IRI="https://example.org/mckee-conflict#"/>
+    <Prefix name="mck" IRI="https://example.org/mckee#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="dcterms" IRI="http://purl.org/dc/terms/"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
+        <Literal>Nicolas Chiappucci</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="en">Ontology modelling Robert McKee&apos;s three levels of dramatic conflict.</Literal>
+    </Annotation>
+    <Declaration>
+        <Class abbreviatedIRI="mck:Body"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="mck:Conflict"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="mck:Emotions"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="mck:ExternalForce"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="mck:ExtraPersonalConflict"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="mck:InnerConflict"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="mck:Mind"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="mck:Origin"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="mck:PersonalConflict"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="mck:PhysicalEnvironment"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="mck:SocialEnvironment"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="mck:SocialInstitutions"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="mck:affects"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="mck:hasOriginIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="mck:hasOriginInBody"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="mck:hasOriginInEmotions"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="mck:hasOriginInMind"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="mck:isAffectedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="mck:isAgainst"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:created"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:license"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:date"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="mck:ExternalForce"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="mck:PhysicalEnvironment"/>
+            <Class abbreviatedIRI="mck:SocialEnvironment"/>
+            <Class abbreviatedIRI="mck:SocialInstitutions"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="mck:Origin"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="mck:Body"/>
+            <Class abbreviatedIRI="mck:Emotions"/>
+            <Class abbreviatedIRI="mck:Mind"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class abbreviatedIRI="mck:ExtraPersonalConflict"/>
+        <Class abbreviatedIRI="mck:Conflict"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="mck:InnerConflict"/>
+        <Class abbreviatedIRI="mck:Conflict"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="mck:InnerConflict"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="mck:hasOriginIn"/>
+            <ObjectUnionOf>
+                <Class abbreviatedIRI="mck:Body"/>
+                <Class abbreviatedIRI="mck:Emotions"/>
+                <Class abbreviatedIRI="mck:Mind"/>
+            </ObjectUnionOf>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="mck:PersonalConflict"/>
+        <Class abbreviatedIRI="mck:Conflict"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class abbreviatedIRI="mck:ExtraPersonalConflict"/>
+        <Class abbreviatedIRI="mck:InnerConflict"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="mck:ExtraPersonalConflict"/>
+        <Class abbreviatedIRI="mck:PersonalConflict"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="mck:InnerConflict"/>
+        <Class abbreviatedIRI="mck:PersonalConflict"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="mck:hasOriginInBody"/>
+        <ObjectProperty abbreviatedIRI="mck:hasOriginIn"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="mck:hasOriginInEmotions"/>
+        <ObjectProperty abbreviatedIRI="mck:hasOriginIn"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="mck:hasOriginInMind"/>
+        <ObjectProperty abbreviatedIRI="mck:hasOriginIn"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="mck:affects"/>
+        <ObjectProperty abbreviatedIRI="mck:isAffectedBy"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="mck:affects"/>
+        <Class abbreviatedIRI="mck:Conflict"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="mck:hasOriginIn"/>
+        <Class abbreviatedIRI="mck:Conflict"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="mck:isAgainst"/>
+        <Class abbreviatedIRI="mck:ExtraPersonalConflict"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="mck:hasOriginIn"/>
+        <Class abbreviatedIRI="mck:Origin"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="mck:hasOriginInBody"/>
+        <Class abbreviatedIRI="mck:Body"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="mck:hasOriginInEmotions"/>
+        <Class abbreviatedIRI="mck:Emotions"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="mck:hasOriginInMind"/>
+        <Class abbreviatedIRI="mck:Mind"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="mck:isAgainst"/>
+        <Class abbreviatedIRI="mck:ExternalForce"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mck:Body</AbbreviatedIRI>
+        <Literal xml:lang="en">Body</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mck:Body</AbbreviatedIRI>
+        <Literal xml:lang="it">Corpo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>mck:Conflict</AbbreviatedIRI>
+        <Literal xml:lang="en">A state of opposition between a character and internal or external forces.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mck:Conflict</AbbreviatedIRI>
+        <Literal xml:lang="en">Conflict</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mck:Conflict</AbbreviatedIRI>
+        <Literal xml:lang="it">Conflitto</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mck:Emotions</AbbreviatedIRI>
+        <Literal xml:lang="en">Emotions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mck:Emotions</AbbreviatedIRI>
+        <Literal xml:lang="it">Emozioni</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mck:ExternalForce</AbbreviatedIRI>
+        <Literal xml:lang="en">External Force</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>mck:ExtraPersonalConflict</AbbreviatedIRI>
+        <Literal xml:lang="en">Opposition between the protagonist and elements of the external world.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mck:ExtraPersonalConflict</AbbreviatedIRI>
+        <Literal xml:lang="it">Conflitto extrapersonale</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mck:ExtraPersonalConflict</AbbreviatedIRI>
+        <Literal xml:lang="en">Extra‑personal Conflict</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>mck:InnerConflict</AbbreviatedIRI>
+        <Literal xml:lang="en">Psychological struggle within a character.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mck:InnerConflict</AbbreviatedIRI>
+        <Literal xml:lang="it">Conflitto interno</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mck:InnerConflict</AbbreviatedIRI>
+        <Literal xml:lang="en">Inner Conflict</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mck:Mind</AbbreviatedIRI>
+        <Literal xml:lang="it">Mente</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mck:Mind</AbbreviatedIRI>
+        <Literal xml:lang="en">Mind</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mck:Origin</AbbreviatedIRI>
+        <Literal xml:lang="en">Origin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>mck:PersonalConflict</AbbreviatedIRI>
+        <Literal xml:lang="en">Interpersonal opposition between the protagonist and another character.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mck:PersonalConflict</AbbreviatedIRI>
+        <Literal xml:lang="it">Conflitto personale</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mck:PersonalConflict</AbbreviatedIRI>
+        <Literal xml:lang="en">Personal Conflict</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mck:PhysicalEnvironment</AbbreviatedIRI>
+        <Literal xml:lang="it">Ambiente fisico</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mck:PhysicalEnvironment</AbbreviatedIRI>
+        <Literal xml:lang="en">Physical Environment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mck:SocialEnvironment</AbbreviatedIRI>
+        <Literal xml:lang="it">Ambiente sociale</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mck:SocialEnvironment</AbbreviatedIRI>
+        <Literal xml:lang="en">Social Environment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mck:SocialInstitutions</AbbreviatedIRI>
+        <Literal xml:lang="it">Istituzioni sociali</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mck:SocialInstitutions</AbbreviatedIRI>
+        <Literal xml:lang="en">Social Institutions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>mck:affects</AbbreviatedIRI>
+        <Literal xml:lang="en">Indicates the entity influenced by the conflict.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mck:affects</AbbreviatedIRI>
+        <Literal xml:lang="en">affects</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>mck:hasOriginIn</AbbreviatedIRI>
+        <Literal xml:lang="en">Relates a conflict to the internal source from which it arises.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mck:hasOriginIn</AbbreviatedIRI>
+        <Literal xml:lang="it">ha origine in</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mck:hasOriginIn</AbbreviatedIRI>
+        <Literal xml:lang="en">has origin in</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mck:hasOriginInBody</AbbreviatedIRI>
+        <Literal xml:lang="en">has origin in body</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mck:hasOriginInEmotions</AbbreviatedIRI>
+        <Literal xml:lang="en">has origin in emotions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mck:hasOriginInMind</AbbreviatedIRI>
+        <Literal xml:lang="en">has origin in mind</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mck:isAffectedBy</AbbreviatedIRI>
+        <Literal xml:lang="en">is affected by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>mck:isAgainst</AbbreviatedIRI>
+        <Literal xml:lang="en">Connects an extrapersonal conflict to the external force it opposes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mck:isAgainst</AbbreviatedIRI>
+        <Literal xml:lang="en">is against</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>mck:isAgainst</AbbreviatedIRI>
+        <Literal xml:lang="it">si scontra con</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
